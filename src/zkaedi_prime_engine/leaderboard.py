@@ -40,14 +40,36 @@ class BenchmarkLeaderboard:
         self.entries: List[LeaderboardEntry] = []
     
     def load_existing(self):
-        """Load existing leaderboard entries from file."""
-        if self.output_file.exists():
+        """Load existing leaderboard entries from history file."""
+        self._load_history()
+    
+    def _load_history(self):
+        """Load historical entries from JSON if available."""
+        history_file = Path("benchmark_history.json")
+        if history_file.exists():
             try:
-                # Try to parse existing markdown for entries
-                # This is a simplified version - in practice, you'd parse the markdown
-                pass
-            except Exception:
-                pass
+                with open(history_file) as f:
+                    history = json.load(f)
+                    # Merge with existing entries (avoid duplicates)
+                    existing_configs = {(e.config_name, e.timestamp) for e in self.entries}
+                    for entry_data in history.get('entries', []):
+                        key = (entry_data.get('config_name'), entry_data.get('timestamp'))
+                        if key not in existing_configs:
+                            entry = LeaderboardEntry(**entry_data)
+                            self.entries.append(entry)
+                            existing_configs.add(key)
+            except Exception as e:
+                print(f"Warning: Could not load history: {e}")
+    
+    def save_history(self):
+        """Save entries to history file."""
+        history_file = Path("benchmark_history.json")
+        history = {
+            'entries': [asdict(e) for e in self.entries],
+            'last_updated': time.strftime('%Y-%m-%d %H:%M:%S UTC')
+        }
+        with open(history_file, 'w') as f:
+            json.dump(history, f, indent=2)
     
     def add_results(self, results: List[BenchmarkResult]):
         """Add benchmark results to leaderboard.
@@ -90,9 +112,16 @@ class BenchmarkLeaderboard:
         
         # Generate markdown
         md = []
+        md.append("<div align=\"center\">")
+        md.append("")
         md.append("# 🏆 ZKAEDI PRIME Engine - Benchmark Leaderboard")
         md.append("")
         md.append("**Real-time performance rankings** - Updated automatically via GitHub Actions")
+        md.append("")
+        md.append("[![Auto Update](https://img.shields.io/badge/auto--update-daily-blue.svg)](.github/workflows/benchmark_leaderboard.yml)")
+        md.append("[![Workflow](https://github.com/zkaedii/h-benchmark/workflows/Benchmark%20Leaderboard/badge.svg)](https://github.com/zkaedii/h-benchmark/actions/workflows/benchmark_leaderboard.yml)")
+        md.append("")
+        md.append("</div>")
         md.append("")
         md.append(f"*Last updated: {time.strftime('%Y-%m-%d %H:%M:%S UTC')}*")
         md.append("")
@@ -252,7 +281,12 @@ class BenchmarkLeaderboard:
    python -m zkaedi_prime_engine.benchmark
    ```
 
-2. The leaderboard will be automatically updated via GitHub Actions.
+2. Generate leaderboard:
+   ```bash
+   python -m zkaedi_prime_engine.leaderboard
+   ```
+
+3. The leaderboard will be automatically updated via GitHub Actions.
 
 ---
 
@@ -310,4 +344,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
