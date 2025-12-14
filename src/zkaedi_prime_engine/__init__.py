@@ -50,3 +50,10 @@ __all__ = [
     "QECError",
     "BackendError",
 ]
+
+# Leaderboard module (optional)
+try:
+    from .leaderboard import BenchmarkLeaderboard
+    __all__.append("BenchmarkLeaderboard")
+except ImportError:
+    pass

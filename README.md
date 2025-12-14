@@ -929,6 +929,36 @@ pytest tests/ --tb=line --disable-warnings --maxfail=5
 
 ---
 
+## 🏆 Benchmark Leaderboard
+
+<div align="center">
+
+### [📊 View Real-Time Leaderboard →](BENCHMARK_LEADERBOARD.md)
+
+**Live performance rankings updated automatically**
+
+[![Leaderboard](https://img.shields.io/badge/leaderboard-live-brightgreen.svg)](BENCHMARK_LEADERBOARD.md)
+[![Auto Update](https://img.shields.io/badge/auto--update-daily-blue.svg)](.github/workflows/benchmark_leaderboard.yml)
+
+</div>
+
+<details>
+<summary><b>🏆 How the Leaderboard Works</b></summary>
+
+The benchmark leaderboard is automatically updated via GitHub Actions:
+
+- **Automatic Updates**: Runs daily at 00:00 UTC
+- **Manual Trigger**: Can be triggered manually via workflow_dispatch
+- **Real-Time Rankings**: Shows top performers by time per step
+- **Statistics**: Includes backend distribution, system size performance
+- **History**: Tracks recent updates and trends
+
+**View the leaderboard**: [BENCHMARK_LEADERBOARD.md](BENCHMARK_LEADERBOARD.md)
+
+</details>
+
+---
+
 ## 📊 Benchmarks
 
 <details>
