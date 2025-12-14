@@ -83,7 +83,33 @@ class ZKAEDIPrimeHamiltonian:
             beta: Noise scaling factor (default: 0.5)
             seed: Random seed for reproducibility
         """
-        self.H0 = np.array(H0, dtype=complex)
+        # Validate input type
+        if H0 is None:
+            raise ValueError("Hamiltonian cannot be None. Expected numpy array or matrix.")
+        
+        if isinstance(H0, str):
+            raise TypeError("Hamiltonian must be a numpy array or matrix, not a string.")
+        
+        if isinstance(H0, list):
+            # Try to convert list to array, but warn about it
+            try:
+                H0 = np.array(H0, dtype=complex)
+            except (ValueError, TypeError) as e:
+                raise TypeError(f"Cannot convert list to numpy array: {e}. Use np.array() to create a proper array.")
+        
+        # Convert to numpy array
+        try:
+            self.H0 = np.array(H0, dtype=complex)
+        except (ValueError, TypeError) as e:
+            raise TypeError(f"Invalid Hamiltonian data type. Expected numpy array or matrix. Error: {e}")
+        
+        # Validate shape
+        if len(self.H0.shape) != 2:
+            raise ValueError(f"Hamiltonian must be a 2D array/matrix, got shape {self.H0.shape}")
+        
+        if self.H0.shape[0] != self.H0.shape[1]:
+            raise ValueError(f"Hamiltonian must be square (got {self.H0.shape[0]}×{self.H0.shape[1]}). Expected square matrix.")
+        
         self.H = self.H0.copy()
         self.eta = eta
         self.gamma = gamma
@@ -571,8 +597,24 @@ class ZKAEDIEngine:
             sparsity_surface_threshold: Sparsity threshold for Surface Code vs LDPC
             seed: Random seed
         """
+        # Validate num_qubits FIRST (before using it to compute dimension)
+        if not isinstance(num_qubits, int) or num_qubits <= 0:
+            raise ValueError(f"num_qubits must be a positive integer, got {num_qubits}")
+        
         self.n = num_qubits
         self.dimension = 1 << num_qubits
+        
+        # Validate H0
+        if H0 is None:
+            raise ValueError("H0 cannot be None. Expected a numpy array representing the Hamiltonian.")
+        
+        try:
+            H0 = np.array(H0, dtype=complex)
+        except (ValueError, TypeError) as e:
+            raise TypeError(f"Invalid H0 data type. Expected numpy array. Error: {e}")
+        
+        if len(H0.shape) != 2:
+            raise ValueError(f"H0 must be a 2D array, got shape {H0.shape}")
         
         # Validate H0 size
         if H0.shape != (self.dimension, self.dimension):
@@ -784,6 +826,7 @@ class ZKAEDIEngine:
         latest = self.diagnostics[-1]
         
         return {
+            "status": "evolved",
             "num_qubits": self.n,
             "dimension": self.dimension,
             "timesteps": len(self.diagnostics),
