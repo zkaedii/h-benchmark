@@ -102,8 +102,10 @@ class BenchmarkLeaderboard:
         # Top performers section
         md.append("## 🥇 Top Performers")
         md.append("")
+        md.append("**Rankings by time per step (lower is better)**")
+        md.append("")
         md.append("| Rank | Configuration | Qubits | Time/Step (ms) | Entropy | Sparsity | Backend |")
-        md.append("|------|---------------|--------|----------------|---------|----------|---------|")
+        md.append("|:----:|:-------------|:------:|:--------------:|:-------:|:--------:|:-------:|")
         
         # Show top 20
         top_entries = sorted_entries[:20]
@@ -134,11 +136,15 @@ class BenchmarkLeaderboard:
             fastest = sorted_entries[0]
             slowest = sorted_entries[-1]
             avg_time = np.mean([e.time_per_step_ms for e in sorted_entries])
+            median_time = np.median([e.time_per_step_ms for e in sorted_entries])
             
-            md.append(f"- **Fastest**: `{fastest.config_name}` - {fastest.time_per_step_ms:.3f} ms/step")
-            md.append(f"- **Slowest**: `{slowest.config_name}` - {slowest.time_per_step_ms:.3f} ms/step")
-            md.append(f"- **Average**: {avg_time:.3f} ms/step")
-            md.append(f"- **Total Entries**: {len(sorted_entries)}")
+            md.append("| Metric | Value |")
+            md.append("|:-------|:------|")
+            md.append(f"| **Fastest** | `{fastest.config_name}` - **{fastest.time_per_step_ms:.3f} ms/step** |")
+            md.append(f"| **Slowest** | `{slowest.config_name}` - {slowest.time_per_step_ms:.3f} ms/step |")
+            md.append(f"| **Average** | {avg_time:.3f} ms/step |")
+            md.append(f"| **Median** | {median_time:.3f} ms/step |")
+            md.append(f"| **Total Entries** | {len(sorted_entries)} |")
             md.append("")
         
         # Backend distribution
@@ -149,7 +155,7 @@ class BenchmarkLeaderboard:
             backend_counts[entry.backend] = backend_counts.get(entry.backend, 0) + 1
         
         md.append("| Backend | Count | Percentage |")
-        md.append("|---------|-------|------------|")
+        md.append("|:--------|:-----:|:----------:|")
         total = len(sorted_entries)
         for backend, count in sorted(backend_counts.items(), key=lambda x: x[1], reverse=True):
             percentage = (count / total * 100) if total > 0 else 0
@@ -163,7 +169,7 @@ class BenchmarkLeaderboard:
         md.append("## 📈 Performance by System Size")
         md.append("")
         md.append("| Qubits | Best Time/Step (ms) | Average Time/Step (ms) | Entries |")
-        md.append("|--------|---------------------|------------------------|---------|")
+        md.append("|:------:|:-------------------:|:---------------------:|:-------:|")
         
         by_qubits = {}
         for entry in sorted_entries:
@@ -185,7 +191,7 @@ class BenchmarkLeaderboard:
         md.append("## 🔄 Recent Updates")
         md.append("")
         md.append("| Timestamp | Entries Added |")
-        md.append("|-----------|---------------|")
+        md.append("|:----------|:--------------:|")
         
         # Group by timestamp
         by_timestamp = {}
@@ -204,10 +210,28 @@ class BenchmarkLeaderboard:
         md.append("")
         md.append("## 📝 Notes")
         md.append("")
-        md.append("- Leaderboard is automatically updated via GitHub Actions")
-        md.append("- Rankings are based on time per step (lower is better)")
-        md.append("- Only successful benchmarks are included")
-        md.append("- Results are sorted by performance (fastest first)")
+        md.append("- ✅ Leaderboard is automatically updated via GitHub Actions (daily at 00:00 UTC)")
+        md.append("- ✅ Rankings are based on time per step (lower is better)")
+        md.append("- ✅ Only successful benchmarks are included")
+        md.append("- ✅ Results are sorted by performance (fastest first)")
+        md.append("- ✅ Historical data is preserved in `benchmark_history.json`")
+        md.append("")
+        md.append("### 🔧 Manual Update")
+        md.append("")
+        md.append("To manually update the leaderboard:")
+        md.append("")
+        md.append("```bash")
+        md.append("# Run benchmarks")
+        md.append("python -m zkaedi_prime_engine.benchmark")
+        md.append("")
+        md.append("# Generate leaderboard")
+        md.append("python -m zkaedi_prime_engine.leaderboard")
+        md.append("```")
+        md.append("")
+        md.append("Or trigger the workflow manually:")
+        md.append("- Go to [Actions](https://github.com/zkaedii/h-benchmark/actions)")
+        md.append("- Select 'Benchmark Leaderboard' workflow")
+        md.append("- Click 'Run workflow'")
         md.append("")
         md.append("*This leaderboard is maintained automatically. For manual updates, see the benchmark suite.*")
         

@@ -47,8 +47,12 @@ htmlcov/
 # Outputs
 outputs/
 *.json
+!benchmark_history.json
 *.png
 *.html
+
+# Leaderboard (keep in repo)
+!BENCHMARK_LEADERBOARD.md
 
 # OS
 .DS_Store
