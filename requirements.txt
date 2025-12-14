@@ -1,2 +1,5 @@
 numpy>=1.19.0
 
+# Optional dependencies for enhanced benchmarking
+# psutil>=5.8.0  # For memory/CPU tracking (optional)
+

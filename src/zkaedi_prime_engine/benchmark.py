@@ -22,6 +22,13 @@ from .engine import (
     BackendType
 )
 
+# Optional dependency for memory/CPU tracking
+try:
+    import psutil
+    PSUTIL_AVAILABLE = True
+except ImportError:
+    PSUTIL_AVAILABLE = False
+
 
 @dataclass
 class BenchmarkResult:
@@ -36,7 +43,9 @@ class BenchmarkResult:
     final_backend: str
     qec_activations: int
     memory_efficient: bool
-    success: bool
+    memory_usage_mb: float = 0.0
+    cpu_usage_percent: float = 0.0
+    success: bool = True
     error: str = ""
 
 
@@ -58,7 +67,8 @@ class ZKAEDIPrimeBenchmark:
                        gamma: float = 1.0,
                        epsilon: float = 0.04,
                        beta: float = 0.5,
-                       seed: int = 42) -> BenchmarkResult:
+                       seed: int = 42,
+                       track_memory: bool = True) -> BenchmarkResult:
         """Benchmark a single configuration.
         
         Args:
@@ -92,14 +102,34 @@ class ZKAEDIPrimeBenchmark:
                 seed=seed
             )
             
-            # Measure memory before
+            # Measure memory and CPU usage (if available)
             import sys
+            import os
+            
+            if track_memory and PSUTIL_AVAILABLE:
+                process = psutil.Process(os.getpid())
+                memory_before = process.memory_info().rss / 1024 / 1024  # MB
+                cpu_before = process.cpu_percent()
+            else:
+                memory_before = 0.0
+                cpu_before = 0.0
+            
             state_size_before = sys.getsizeof(engine.state.state)
             
             # Run evolution and measure time
             start_time = time.time()
             diagnostics = engine.evolve(timesteps, track_metrics=False)
             elapsed_time = time.time() - start_time
+            
+            # Measure memory and CPU after
+            if track_memory and PSUTIL_AVAILABLE:
+                memory_after = process.memory_info().rss / 1024 / 1024  # MB
+                cpu_after = process.cpu_percent()
+                memory_delta = memory_after - memory_before
+            else:
+                memory_after = 0.0
+                cpu_after = 0.0
+                memory_delta = 0.0
             
             # Get final state
             summary = engine.get_summary()
@@ -123,6 +153,8 @@ class ZKAEDIPrimeBenchmark:
                 final_backend=final_diag.backend.value if final_diag else "unknown",
                 qec_activations=qec_count,
                 memory_efficient=memory_efficient,
+                memory_usage_mb=memory_delta if track_memory else 0.0,
+                cpu_usage_percent=cpu_after if track_memory else 0.0,
                 success=True
             )
             
@@ -142,6 +174,8 @@ class ZKAEDIPrimeBenchmark:
                 final_backend="error",
                 qec_activations=0,
                 memory_efficient=False,
+                memory_usage_mb=0.0,
+                cpu_usage_percent=0.0,
                 success=False,
                 error=str(e)
             )
