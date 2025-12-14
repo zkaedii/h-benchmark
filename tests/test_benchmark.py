@@ -6,7 +6,6 @@ from pathlib import Path
 from zkaedi_prime_engine.benchmark import (
     ZKAEDIPrimeBenchmark,
     BenchmarkResult,
-    generate_summary,
     DEFAULT_QBIT_COUNTS,
     DEFAULT_TIMESTEPS
 )

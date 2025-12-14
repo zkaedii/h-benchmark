@@ -264,19 +264,35 @@ class BenchmarkLeaderboard:
         content = self.generate_leaderboard()
         self.output_file.write_text(content, encoding='utf-8')
     
-    def run_and_update(self):
-        """Run benchmarks and update leaderboard."""
+    def run_and_update(self, quick: bool = False):
+        """Run benchmarks and update leaderboard.
+        
+        Args:
+            quick: If True, run only quick benchmarks (faster)
+        """
         print("Running benchmarks for leaderboard...")
         benchmark = ZKAEDIPrimeBenchmark()
         
-        # Run all benchmarks
-        results = benchmark.run_all(parallel=True)
+        if quick:
+            # Quick benchmarks for CI/CD
+            print("Running quick benchmarks...")
+            results = benchmark.benchmark_scalability(qubit_counts=[2, 3, 4], timesteps=10)
+            benchmark.results = results
+        else:
+            # Full benchmark suite
+            benchmark.run_all(parallel=True)
+        
+        # Load existing history first
+        self._load_history()
         
         # Add to leaderboard
         self.add_results(benchmark.results)
         
         # Save
         self.save()
+        
+        # Save history
+        self.save_history()
         
         print(f"Leaderboard updated: {self.output_file}")
 
