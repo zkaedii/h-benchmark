@@ -45,5 +45,5 @@ jobs:
         git config --local user.name "GitHub Action"
         git add BENCHMARK_LEADERBOARD.md benchmark_history.json
         git diff --staged --quiet || git commit -m "Update benchmark leaderboard [skip ci]"
-        git push
+        git push origin main
 
