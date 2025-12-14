@@ -34,6 +34,9 @@ dev = [
     "pytest-cov>=4.0.0",
 ]
 
+[project.scripts]
+zkaedi-benchmark = "zkaedi_prime_engine.benchmark:main"
+
 [project.urls]
 Homepage = "https://github.com/zkaedii/h-benchmark"
 Documentation = "https://github.com/zkaedii/h-benchmark#readme"

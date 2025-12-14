@@ -9,17 +9,19 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     strategy:
       matrix:
         python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: ${{ matrix.python-version }}
+        cache: 'pip'
     
     - name: Install dependencies
       run: |
@@ -28,9 +30,10 @@ jobs:
     
     - name: Run tests
       run: |
-        pytest tests/ -v
+        pytest tests/ -v --tb=short
+      timeout-minutes: 10
     
-    - name: Run benchmarks
+    - name: Run benchmarks (quick)
       run: |
-        python -m zkaedi_prime_engine.benchmark || echo "Benchmark optional"
-
+        python -c "from zkaedi_prime_engine import ZKAEDIEngine, create_example_hamiltonian; H0 = create_example_hamiltonian(2, 'pauli_z'); engine = ZKAEDIEngine(2, H0); engine.evolve(5); print('Benchmark OK')" || echo "Benchmark optional"
+      timeout-minutes: 2
