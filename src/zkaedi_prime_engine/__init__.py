@@ -18,6 +18,15 @@ from .engine import (
     hermitian_projection,
 )
 
+from .exceptions import (
+    ZKAEDIError,
+    HamiltonianError,
+    EngineInitializationError,
+    StateError,
+    QECError,
+    BackendError,
+)
+
 __version__ = "1.0.0"
 __author__ = "ZKAEDI PRIME Contributors"
 
@@ -34,4 +43,10 @@ __all__ = [
     "demonstrate_zkaedi_prime",
     "sigmoid",
     "hermitian_projection",
+    "ZKAEDIError",
+    "HamiltonianError",
+    "EngineInitializationError",
+    "StateError",
+    "QECError",
+    "BackendError",
 ]

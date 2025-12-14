@@ -30,8 +30,19 @@ jobs:
     
     - name: Run tests
       run: |
-        pytest tests/ -v --tb=short
+        pytest tests/ -v --tb=line --disable-warnings --maxfail=5
       timeout-minutes: 10
+    
+    - name: Run tests with coverage
+      run: |
+        pytest tests/ --cov=zkaedi_prime_engine --cov-report=term-missing --cov-report=xml
+      timeout-minutes: 10
+    
+    - name: Upload coverage
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./coverage.xml
+        fail_ci_if_error: false
     
     - name: Run benchmarks (quick)
       run: |
