@@ -7,7 +7,7 @@ Thank you for your interest in contributing!
 1. Fork the repository
 2. Clone your fork:
    ```bash
-   git clone https://github.com/yourusername/zkaedi-prime-engine.git
+   git clone https://github.com/zkaedii/h-benchmark.git
    cd zkaedi-prime-engine
    ```
 

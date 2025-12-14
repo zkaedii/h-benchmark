@@ -29,7 +29,7 @@ pip install zkaedi-prime-engine
 Or from source:
 
 ```bash
-git clone https://github.com/yourusername/zkaedi-prime-engine.git
+git clone https://github.com/zkaedii/h-benchmark.git
 cd zkaedi-prime-engine
 pip install -e .
 ```
@@ -165,7 +165,7 @@ See the [examples/](examples/) directory for:
 ## Installation from Source
 
 ```bash
-git clone https://github.com/yourusername/zkaedi-prime-engine.git
+git clone https://github.com/zkaedii/h-benchmark.git
 cd zkaedi-prime-engine
 pip install -e .
 ```
