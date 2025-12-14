@@ -186,7 +186,7 @@ If you use ZKAEDI PRIME Engine in your research, please cite:
 @software{zkaedi_prime_engine,
   title = {ZKAEDI PRIME Engine: Unified Quantum Computing Engine},
   author = {zkaedii},
-  year = {2024},
+  year = {2025},
   url = {https://github.com/zkaedii/h-benchmark}
 }
 ```
