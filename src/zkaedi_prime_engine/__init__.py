@@ -13,7 +13,9 @@ from .engine import (
     ZKAEDIDiagnostics,
     BackendType,
     create_example_hamiltonian,
-    demonstrate_zkaedi_prime
+    demonstrate_zkaedi_prime,
+    sigmoid,
+    hermitian_projection,
 )
 
 __version__ = "1.0.0"
@@ -30,4 +32,6 @@ __all__ = [
     "BackendType",
     "create_example_hamiltonian",
     "demonstrate_zkaedi_prime",
+    "sigmoid",
+    "hermitian_projection",
 ]
