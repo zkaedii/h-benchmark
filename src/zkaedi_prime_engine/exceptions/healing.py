@@ -44,6 +44,9 @@ class SelfHealingError(ZKAEDIError):
         self.healing_attempts = 0
         self.healed = False
         self.healing_history = []
+        
+        # Attempt healing immediately upon creation
+        self.attempt_healing()
     
     def attempt_healing(self) -> bool:
         """Attempt to heal the exception.
