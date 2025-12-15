@@ -9,7 +9,7 @@
 
 </div>
 
-*Last updated: 2025-12-14 16:09:36 UTC*
+*Last updated: 2025-12-15 00:14:42 UTC*
 
 ---
 
@@ -20,11 +20,14 @@
 | Rank | Configuration | Qubits | Time/Step (ms) | Entropy | Sparsity | Backend |
 |:----:|:-------------|:------:|:--------------:|:-------:|:--------:|:-------:|
 | 1 🥇 | `scalability_3q` | 3 | **0.069** | 0.0000 | 0.1250 | `dense` |
-| 2 🥈 | `scalability_2q` | 2 | **0.074** | 0.0000 | 0.2500 | `dense` |
-| 3 🥉 | `scalability_2q` | 2 | **0.078** | 0.0000 | 0.2500 | `dense` |
-| 4  | `scalability_4q` | 4 | **0.081** | 0.0000 | 0.0625 | `dense` |
-| 5  | `scalability_3q` | 3 | **0.098** | 0.0000 | 0.1250 | `dense` |
-| 6  | `scalability_4q` | 4 | **0.103** | 0.0000 | 0.0625 | `dense` |
+| 2 🥈 | `scalability_3q` | 3 | **0.070** | 0.0000 | 0.1250 | `dense` |
+| 3 🥉 | `scalability_2q` | 2 | **0.074** | 0.0000 | 0.2500 | `dense` |
+| 4  | `scalability_4q` | 4 | **0.075** | 0.0000 | 0.0625 | `dense` |
+| 5  | `scalability_2q` | 2 | **0.076** | 0.0000 | 0.2500 | `dense` |
+| 6  | `scalability_2q` | 2 | **0.078** | 0.0000 | 0.2500 | `dense` |
+| 7  | `scalability_4q` | 4 | **0.081** | 0.0000 | 0.0625 | `dense` |
+| 8  | `scalability_3q` | 3 | **0.098** | 0.0000 | 0.1250 | `dense` |
+| 9  | `scalability_4q` | 4 | **0.103** | 0.0000 | 0.0625 | `dense` |
 
 ---
 
@@ -34,15 +37,15 @@
 |:-------|:------|
 | **Fastest** | `scalability_3q` - **0.069 ms/step** |
 | **Slowest** | `scalability_4q` - 0.103 ms/step |
-| **Average** | 0.084 ms/step |
-| **Median** | 0.079 ms/step |
-| **Total Entries** | 6 |
+| **Average** | 0.080 ms/step |
+| **Median** | 0.076 ms/step |
+| **Total Entries** | 9 |
 
 ### Backend Distribution
 
 | Backend | Count | Percentage |
 |:--------|:-----:|:----------:|
-| `dense` | 6 | 100.0% |
+| `dense` | 9 | 100.0% |
 
 ---
 
@@ -50,9 +53,9 @@
 
 | Qubits | Best Time/Step (ms) | Average Time/Step (ms) | Entries |
 |:------:|:-------------------:|:---------------------:|:-------:|
-| 2 | **0.074** | 0.076 | 2 |
-| 3 | **0.069** | 0.083 | 2 |
-| 4 | **0.081** | 0.092 | 2 |
+| 2 | **0.074** | 0.076 | 3 |
+| 3 | **0.069** | 0.079 | 3 |
+| 4 | **0.075** | 0.087 | 3 |
 
 ---
 
@@ -60,6 +63,7 @@
 
 | Timestamp | Entries Added |
 |:----------|:--------------:|
+| 2025-12-15 00:14:42 UTC | 3 |
 | 2025-12-14 16:09:36 UTC | 3 |
 | 2025-12-14 16:08:25 UTC | 3 |
 
