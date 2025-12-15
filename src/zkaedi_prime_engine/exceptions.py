@@ -1,35 +1,28 @@
 """Custom exceptions for ZKAEDI PRIME Engine.
 
 Provides granular exception types for better error handling and debugging.
+
+This module maintains backward compatibility. For advanced exception features,
+see zkaedi_prime_engine.exceptions module.
 """
 
+# Import from the new exceptions module for backward compatibility
+from .exceptions.base import (
+    ZKAEDIError,
+    HamiltonianError,
+    EngineInitializationError,
+    StateError,
+    QECError,
+    BackendError,
+)
 
-class ZKAEDIError(Exception):
-    """Base exception for all ZKAEDI PRIME errors."""
-    pass
-
-
-class HamiltonianError(ZKAEDIError):
-    """Raised when Hamiltonian operations fail."""
-    pass
-
-
-class EngineInitializationError(ZKAEDIError):
-    """Raised when engine initialization fails."""
-    pass
-
-
-class StateError(ZKAEDIError):
-    """Raised when state operations fail."""
-    pass
-
-
-class QECError(ZKAEDIError):
-    """Raised when quantum error correction fails."""
-    pass
-
-
-class BackendError(ZKAEDIError):
-    """Raised when backend operations fail."""
-    pass
+# Re-export for backward compatibility
+__all__ = [
+    "ZKAEDIError",
+    "HamiltonianError",
+    "EngineInitializationError",
+    "StateError",
+    "QECError",
+    "BackendError",
+]
 
