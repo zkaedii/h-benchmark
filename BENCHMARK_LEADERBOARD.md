@@ -9,7 +9,7 @@
 
 </div>
 
-*Last updated: 2025-12-17 01:07:16 UTC*
+*Last updated: 2025-12-18 01:08:48 UTC*
 
 ---
 
@@ -19,21 +19,24 @@
 
 | Rank | Configuration | Qubits | Time/Step (ms) | Entropy | Sparsity | Backend |
 |:----:|:-------------|:------:|:--------------:|:-------:|:--------:|:-------:|
-| 1 🥇 | `scalability_3q` | 3 | **0.067** | 0.0000 | 0.1250 | `dense` |
-| 2 🥈 | `scalability_3q` | 3 | **0.069** | 0.0000 | 0.1250 | `dense` |
-| 3 🥉 | `scalability_3q` | 3 | **0.070** | 0.0000 | 0.1250 | `dense` |
-| 4  | `scalability_2q` | 2 | **0.074** | 0.0000 | 0.2500 | `dense` |
-| 5  | `scalability_2q` | 2 | **0.075** | 0.0000 | 0.2500 | `dense` |
-| 6  | `scalability_4q` | 4 | **0.075** | 0.0000 | 0.0625 | `dense` |
-| 7  | `scalability_4q` | 4 | **0.076** | 0.0000 | 0.0625 | `dense` |
-| 8  | `scalability_2q` | 2 | **0.076** | 0.0000 | 0.2500 | `dense` |
+| 1 🥇 | `scalability_3q` | 3 | **0.064** | 0.0000 | 0.1250 | `dense` |
+| 2 🥈 | `scalability_3q` | 3 | **0.067** | 0.0000 | 0.1250 | `dense` |
+| 3 🥉 | `scalability_3q` | 3 | **0.069** | 0.0000 | 0.1250 | `dense` |
+| 4  | `scalability_3q` | 3 | **0.070** | 0.0000 | 0.1250 | `dense` |
+| 5  | `scalability_2q` | 2 | **0.071** | 0.0000 | 0.2500 | `dense` |
+| 6  | `scalability_2q` | 2 | **0.074** | 0.0000 | 0.2500 | `dense` |
+| 7  | `scalability_2q` | 2 | **0.075** | 0.0000 | 0.2500 | `dense` |
+| 8  | `scalability_4q` | 4 | **0.075** | 0.0000 | 0.0625 | `dense` |
 | 9  | `scalability_4q` | 4 | **0.076** | 0.0000 | 0.0625 | `dense` |
-| 10  | `scalability_2q` | 2 | **0.077** | 0.0000 | 0.2500 | `dense` |
-| 11  | `scalability_2q` | 2 | **0.078** | 0.0000 | 0.2500 | `dense` |
-| 12  | `scalability_4q` | 4 | **0.081** | 0.0000 | 0.0625 | `dense` |
-| 13  | `scalability_3q` | 3 | **0.084** | 0.0000 | 0.1250 | `dense` |
-| 14  | `scalability_3q` | 3 | **0.098** | 0.0000 | 0.1250 | `dense` |
-| 15  | `scalability_4q` | 4 | **0.103** | 0.0000 | 0.0625 | `dense` |
+| 10  | `scalability_2q` | 2 | **0.076** | 0.0000 | 0.2500 | `dense` |
+| 11  | `scalability_4q` | 4 | **0.076** | 0.0000 | 0.0625 | `dense` |
+| 12  | `scalability_2q` | 2 | **0.077** | 0.0000 | 0.2500 | `dense` |
+| 13  | `scalability_2q` | 2 | **0.078** | 0.0000 | 0.2500 | `dense` |
+| 14  | `scalability_4q` | 4 | **0.081** | 0.0000 | 0.0625 | `dense` |
+| 15  | `scalability_3q` | 3 | **0.084** | 0.0000 | 0.1250 | `dense` |
+| 16  | `scalability_4q` | 4 | **0.084** | 0.0000 | 0.0625 | `dense` |
+| 17  | `scalability_3q` | 3 | **0.098** | 0.0000 | 0.1250 | `dense` |
+| 18  | `scalability_4q` | 4 | **0.103** | 0.0000 | 0.0625 | `dense` |
 
 ---
 
@@ -41,17 +44,17 @@
 
 | Metric | Value |
 |:-------|:------|
-| **Fastest** | `scalability_3q` - **0.067 ms/step** |
+| **Fastest** | `scalability_3q` - **0.064 ms/step** |
 | **Slowest** | `scalability_4q` - 0.103 ms/step |
-| **Average** | 0.079 ms/step |
+| **Average** | 0.078 ms/step |
 | **Median** | 0.076 ms/step |
-| **Total Entries** | 15 |
+| **Total Entries** | 18 |
 
 ### Backend Distribution
 
 | Backend | Count | Percentage |
 |:--------|:-----:|:----------:|
-| `dense` | 15 | 100.0% |
+| `dense` | 18 | 100.0% |
 
 ---
 
@@ -59,9 +62,9 @@
 
 | Qubits | Best Time/Step (ms) | Average Time/Step (ms) | Entries |
 |:------:|:-------------------:|:---------------------:|:-------:|
-| 2 | **0.074** | 0.076 | 5 |
-| 3 | **0.067** | 0.077 | 5 |
-| 4 | **0.075** | 0.082 | 5 |
+| 2 | **0.071** | 0.075 | 6 |
+| 3 | **0.064** | 0.075 | 6 |
+| 4 | **0.075** | 0.083 | 6 |
 
 ---
 
@@ -69,11 +72,11 @@
 
 | Timestamp | Entries Added |
 |:----------|:--------------:|
+| 2025-12-18 01:08:48 UTC | 3 |
 | 2025-12-17 01:07:16 UTC | 3 |
 | 2025-12-16 01:13:14 UTC | 3 |
 | 2025-12-15 00:14:42 UTC | 3 |
 | 2025-12-14 16:09:36 UTC | 3 |
-| 2025-12-14 16:08:25 UTC | 3 |
 
 ---
 
