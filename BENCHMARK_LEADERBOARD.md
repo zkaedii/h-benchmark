@@ -9,7 +9,7 @@
 
 </div>
 
-*Last updated: 2025-12-22 01:15:04 UTC*
+*Last updated: 2025-12-23 01:11:56 UTC*
 
 ---
 
@@ -19,26 +19,26 @@
 
 | Rank | Configuration | Qubits | Time/Step (ms) | Entropy | Sparsity | Backend |
 |:----:|:-------------|:------:|:--------------:|:-------:|:--------:|:-------:|
-| 1 🥇 | `scalability_3q` | 3 | **0.064** | 0.0000 | 0.1250 | `dense` |
-| 2 🥈 | `scalability_3q` | 3 | **0.067** | 0.0000 | 0.1250 | `dense` |
-| 3 🥉 | `scalability_3q` | 3 | **0.067** | 0.0000 | 0.1250 | `dense` |
-| 4  | `scalability_3q` | 3 | **0.067** | 0.0000 | 0.1250 | `dense` |
-| 5  | `scalability_3q` | 3 | **0.069** | 0.0000 | 0.1250 | `dense` |
-| 6  | `scalability_3q` | 3 | **0.070** | 0.0000 | 0.1250 | `dense` |
-| 7  | `scalability_2q` | 2 | **0.071** | 0.0000 | 0.2500 | `dense` |
-| 8  | `scalability_3q` | 3 | **0.073** | 0.0000 | 0.1250 | `dense` |
-| 9  | `scalability_2q` | 2 | **0.074** | 0.0000 | 0.2500 | `dense` |
-| 10  | `scalability_2q` | 2 | **0.074** | 0.0000 | 0.2500 | `dense` |
-| 11  | `scalability_4q` | 4 | **0.074** | 0.0000 | 0.0625 | `dense` |
-| 12  | `scalability_3q` | 3 | **0.074** | 0.0000 | 0.1250 | `dense` |
-| 13  | `scalability_2q` | 2 | **0.075** | 0.0000 | 0.2500 | `dense` |
-| 14  | `scalability_2q` | 2 | **0.075** | 0.0000 | 0.2500 | `dense` |
-| 15  | `scalability_2q` | 2 | **0.075** | 0.0000 | 0.2500 | `dense` |
-| 16  | `scalability_4q` | 4 | **0.075** | 0.0000 | 0.0625 | `dense` |
-| 17  | `scalability_4q` | 4 | **0.076** | 0.0000 | 0.0625 | `dense` |
-| 18  | `scalability_2q` | 2 | **0.076** | 0.0000 | 0.2500 | `dense` |
-| 19  | `scalability_4q` | 4 | **0.076** | 0.0000 | 0.0625 | `dense` |
-| 20  | `scalability_2q` | 2 | **0.077** | 0.0000 | 0.2500 | `dense` |
+| 1 🥇 | `scalability_3q` | 3 | **0.056** | 0.0000 | 0.1250 | `dense` |
+| 2 🥈 | `scalability_2q` | 2 | **0.063** | 0.0000 | 0.2500 | `dense` |
+| 3 🥉 | `scalability_3q` | 3 | **0.064** | 0.0000 | 0.1250 | `dense` |
+| 4  | `scalability_4q` | 4 | **0.065** | 0.0000 | 0.0625 | `dense` |
+| 5  | `scalability_3q` | 3 | **0.067** | 0.0000 | 0.1250 | `dense` |
+| 6  | `scalability_3q` | 3 | **0.067** | 0.0000 | 0.1250 | `dense` |
+| 7  | `scalability_3q` | 3 | **0.067** | 0.0000 | 0.1250 | `dense` |
+| 8  | `scalability_3q` | 3 | **0.069** | 0.0000 | 0.1250 | `dense` |
+| 9  | `scalability_3q` | 3 | **0.070** | 0.0000 | 0.1250 | `dense` |
+| 10  | `scalability_2q` | 2 | **0.071** | 0.0000 | 0.2500 | `dense` |
+| 11  | `scalability_3q` | 3 | **0.073** | 0.0000 | 0.1250 | `dense` |
+| 12  | `scalability_2q` | 2 | **0.074** | 0.0000 | 0.2500 | `dense` |
+| 13  | `scalability_2q` | 2 | **0.074** | 0.0000 | 0.2500 | `dense` |
+| 14  | `scalability_4q` | 4 | **0.074** | 0.0000 | 0.0625 | `dense` |
+| 15  | `scalability_3q` | 3 | **0.074** | 0.0000 | 0.1250 | `dense` |
+| 16  | `scalability_2q` | 2 | **0.075** | 0.0000 | 0.2500 | `dense` |
+| 17  | `scalability_2q` | 2 | **0.075** | 0.0000 | 0.2500 | `dense` |
+| 18  | `scalability_2q` | 2 | **0.075** | 0.0000 | 0.2500 | `dense` |
+| 19  | `scalability_4q` | 4 | **0.075** | 0.0000 | 0.0625 | `dense` |
+| 20  | `scalability_4q` | 4 | **0.076** | 0.0000 | 0.0625 | `dense` |
 
 ---
 
@@ -46,17 +46,17 @@
 
 | Metric | Value |
 |:-------|:------|
-| **Fastest** | `scalability_3q` - **0.064 ms/step** |
+| **Fastest** | `scalability_3q` - **0.056 ms/step** |
 | **Slowest** | `scalability_4q` - 0.103 ms/step |
-| **Average** | 0.077 ms/step |
+| **Average** | 0.075 ms/step |
 | **Median** | 0.075 ms/step |
-| **Total Entries** | 30 |
+| **Total Entries** | 33 |
 
 ### Backend Distribution
 
 | Backend | Count | Percentage |
 |:--------|:-----:|:----------:|
-| `dense` | 30 | 100.0% |
+| `dense` | 33 | 100.0% |
 
 ---
 
@@ -64,9 +64,9 @@
 
 | Qubits | Best Time/Step (ms) | Average Time/Step (ms) | Entries |
 |:------:|:-------------------:|:---------------------:|:-------:|
-| 2 | **0.071** | 0.076 | 10 |
-| 3 | **0.064** | 0.073 | 10 |
-| 4 | **0.074** | 0.081 | 10 |
+| 2 | **0.063** | 0.075 | 11 |
+| 3 | **0.056** | 0.072 | 11 |
+| 4 | **0.065** | 0.080 | 11 |
 
 ---
 
@@ -74,11 +74,11 @@
 
 | Timestamp | Entries Added |
 |:----------|:--------------:|
+| 2025-12-23 01:11:56 UTC | 3 |
 | 2025-12-22 01:15:04 UTC | 3 |
 | 2025-12-21 01:16:31 UTC | 3 |
 | 2025-12-20 01:07:37 UTC | 3 |
 | 2025-12-19 01:12:11 UTC | 3 |
-| 2025-12-18 01:08:48 UTC | 3 |
 
 ---
 
