@@ -9,7 +9,7 @@
 
 </div>
 
-*Last updated: 2026-01-04 00:15:35 UTC*
+*Last updated: 2026-01-05 00:15:32 UTC*
 
 ---
 
@@ -19,26 +19,26 @@
 
 | Rank | Configuration | Qubits | Time/Step (ms) | Entropy | Sparsity | Backend |
 |:----:|:-------------|:------:|:--------------:|:-------:|:--------:|:-------:|
-| 1 🥇 | `scalability_3q` | 3 | **0.056** | 0.0000 | 0.1250 | `dense` |
-| 2 🥈 | `scalability_2q` | 2 | **0.059** | 0.0000 | 0.2500 | `dense` |
-| 3 🥉 | `scalability_3q` | 3 | **0.061** | 0.0000 | 0.1250 | `dense` |
-| 4  | `scalability_2q` | 2 | **0.063** | 0.0000 | 0.2500 | `dense` |
-| 5  | `scalability_3q` | 3 | **0.064** | 0.0000 | 0.1250 | `dense` |
-| 6  | `scalability_4q` | 4 | **0.065** | 0.0000 | 0.0625 | `dense` |
-| 7  | `scalability_4q` | 4 | **0.065** | 0.0000 | 0.0625 | `dense` |
-| 8  | `scalability_3q` | 3 | **0.066** | 0.0000 | 0.1250 | `dense` |
-| 9  | `scalability_3q` | 3 | **0.067** | 0.0000 | 0.1250 | `dense` |
-| 10  | `scalability_3q` | 3 | **0.067** | 0.0000 | 0.1250 | `dense` |
-| 11  | `scalability_3q` | 3 | **0.067** | 0.0000 | 0.1250 | `dense` |
+| 1 🥇 | `scalability_3q` | 3 | **0.052** | 0.0000 | 0.1250 | `dense` |
+| 2 🥈 | `scalability_3q` | 3 | **0.056** | 0.0000 | 0.1250 | `dense` |
+| 3 🥉 | `scalability_4q` | 4 | **0.058** | 0.0000 | 0.0625 | `dense` |
+| 4  | `scalability_2q` | 2 | **0.059** | 0.0000 | 0.2500 | `dense` |
+| 5  | `scalability_2q` | 2 | **0.060** | 0.0000 | 0.2500 | `dense` |
+| 6  | `scalability_3q` | 3 | **0.061** | 0.0000 | 0.1250 | `dense` |
+| 7  | `scalability_2q` | 2 | **0.063** | 0.0000 | 0.2500 | `dense` |
+| 8  | `scalability_3q` | 3 | **0.064** | 0.0000 | 0.1250 | `dense` |
+| 9  | `scalability_4q` | 4 | **0.065** | 0.0000 | 0.0625 | `dense` |
+| 10  | `scalability_4q` | 4 | **0.065** | 0.0000 | 0.0625 | `dense` |
+| 11  | `scalability_3q` | 3 | **0.066** | 0.0000 | 0.1250 | `dense` |
 | 12  | `scalability_3q` | 3 | **0.067** | 0.0000 | 0.1250 | `dense` |
 | 13  | `scalability_3q` | 3 | **0.067** | 0.0000 | 0.1250 | `dense` |
-| 14  | `scalability_3q` | 3 | **0.068** | 0.0000 | 0.1250 | `dense` |
-| 15  | `scalability_3q` | 3 | **0.069** | 0.0000 | 0.1250 | `dense` |
-| 16  | `scalability_3q` | 3 | **0.069** | 0.0000 | 0.1250 | `dense` |
-| 17  | `scalability_3q` | 3 | **0.069** | 0.0000 | 0.1250 | `dense` |
-| 18  | `scalability_2q` | 2 | **0.070** | 0.0000 | 0.2500 | `dense` |
-| 19  | `scalability_3q` | 3 | **0.070** | 0.0000 | 0.1250 | `dense` |
-| 20  | `scalability_3q` | 3 | **0.071** | 0.0000 | 0.1250 | `dense` |
+| 14  | `scalability_3q` | 3 | **0.067** | 0.0000 | 0.1250 | `dense` |
+| 15  | `scalability_3q` | 3 | **0.067** | 0.0000 | 0.1250 | `dense` |
+| 16  | `scalability_3q` | 3 | **0.067** | 0.0000 | 0.1250 | `dense` |
+| 17  | `scalability_3q` | 3 | **0.068** | 0.0000 | 0.1250 | `dense` |
+| 18  | `scalability_3q` | 3 | **0.069** | 0.0000 | 0.1250 | `dense` |
+| 19  | `scalability_3q` | 3 | **0.069** | 0.0000 | 0.1250 | `dense` |
+| 20  | `scalability_3q` | 3 | **0.069** | 0.0000 | 0.1250 | `dense` |
 
 ---
 
@@ -46,17 +46,17 @@
 
 | Metric | Value |
 |:-------|:------|
-| **Fastest** | `scalability_3q` - **0.056 ms/step** |
+| **Fastest** | `scalability_3q` - **0.052 ms/step** |
 | **Slowest** | `scalability_4q` - 0.103 ms/step |
-| **Average** | 0.074 ms/step |
+| **Average** | 0.073 ms/step |
 | **Median** | 0.074 ms/step |
-| **Total Entries** | 69 |
+| **Total Entries** | 72 |
 
 ### Backend Distribution
 
 | Backend | Count | Percentage |
 |:--------|:-----:|:----------:|
-| `dense` | 69 | 100.0% |
+| `dense` | 72 | 100.0% |
 
 ---
 
@@ -64,9 +64,9 @@
 
 | Qubits | Best Time/Step (ms) | Average Time/Step (ms) | Entries |
 |:------:|:-------------------:|:---------------------:|:-------:|
-| 2 | **0.059** | 0.074 | 23 |
-| 3 | **0.056** | 0.070 | 23 |
-| 4 | **0.065** | 0.078 | 23 |
+| 2 | **0.059** | 0.074 | 24 |
+| 3 | **0.052** | 0.070 | 24 |
+| 4 | **0.058** | 0.077 | 24 |
 
 ---
 
@@ -74,11 +74,11 @@
 
 | Timestamp | Entries Added |
 |:----------|:--------------:|
+| 2026-01-05 00:15:32 UTC | 3 |
 | 2026-01-04 00:15:35 UTC | 3 |
 | 2026-01-03 00:13:37 UTC | 3 |
 | 2026-01-02 00:14:09 UTC | 3 |
 | 2026-01-01 00:15:42 UTC | 3 |
-| 2025-12-31 00:14:35 UTC | 3 |
 
 ---
 
