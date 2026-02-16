@@ -56,7 +56,7 @@
       "success": true
     },
     {
-      "rank": 192,
+      "rank": 193,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.10306835174560547,
@@ -892,7 +892,7 @@
       "success": true
     },
     {
-      "rank": 194,
+      "rank": 197,
       "config_name": "scalability_2q",
       "num_qubits": 2,
       "time_per_step_ms": 0.12474060058593751,
@@ -903,7 +903,7 @@
       "success": true
     },
     {
-      "rank": 193,
+      "rank": 195,
       "config_name": "scalability_3q",
       "num_qubits": 3,
       "time_per_step_ms": 0.11148452758789062,
@@ -914,7 +914,7 @@
       "success": true
     },
     {
-      "rank": 195,
+      "rank": 198,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.13153553009033203,
@@ -2144,7 +2144,40 @@
       "backend": "dense",
       "timestamp": "2026-02-15 00:18:37 UTC",
       "success": true
+    },
+    {
+      "rank": 194,
+      "config_name": "scalability_2q",
+      "num_qubits": 2,
+      "time_per_step_ms": 0.10721683502197266,
+      "final_entropy": 0.0,
+      "final_sparsity": 0.25,
+      "backend": "dense",
+      "timestamp": "2026-02-16 00:18:16 UTC",
+      "success": true
+    },
+    {
+      "rank": 192,
+      "config_name": "scalability_3q",
+      "num_qubits": 3,
+      "time_per_step_ms": 0.09946823120117188,
+      "final_entropy": 0.0,
+      "final_sparsity": 0.125,
+      "backend": "dense",
+      "timestamp": "2026-02-16 00:18:16 UTC",
+      "success": true
+    },
+    {
+      "rank": 196,
+      "config_name": "scalability_4q",
+      "num_qubits": 4,
+      "time_per_step_ms": 0.115966796875,
+      "final_entropy": 0.0,
+      "final_sparsity": 0.0625,
+      "backend": "dense",
+      "timestamp": "2026-02-16 00:18:16 UTC",
+      "success": true
     }
   ],
-  "last_updated": "2026-02-15 00:18:37 UTC"
+  "last_updated": "2026-02-16 00:18:16 UTC"
 }
