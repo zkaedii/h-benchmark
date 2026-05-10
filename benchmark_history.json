@@ -23,7 +23,7 @@
       "success": true
     },
     {
-      "rank": 385,
+      "rank": 386,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08132457733154297,
@@ -45,7 +45,7 @@
       "success": true
     },
     {
-      "rank": 424,
+      "rank": 426,
       "config_name": "scalability_3q",
       "num_qubits": 3,
       "time_per_step_ms": 0.09789466857910156,
@@ -56,7 +56,7 @@
       "success": true
     },
     {
-      "rank": 426,
+      "rank": 428,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.10306835174560547,
@@ -111,7 +111,7 @@
       "success": true
     },
     {
-      "rank": 412,
+      "rank": 414,
       "config_name": "scalability_3q",
       "num_qubits": 3,
       "time_per_step_ms": 0.08368492126464844,
@@ -188,7 +188,7 @@
       "success": true
     },
     {
-      "rank": 413,
+      "rank": 415,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08387565612792969,
@@ -199,7 +199,7 @@
       "success": true
     },
     {
-      "rank": 391,
+      "rank": 392,
       "config_name": "scalability_2q",
       "num_qubits": 2,
       "time_per_step_ms": 0.08161067962646484,
@@ -221,7 +221,7 @@
       "success": true
     },
     {
-      "rank": 405,
+      "rank": 407,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08287429809570312,
@@ -397,7 +397,7 @@
       "success": true
     },
     {
-      "rank": 410,
+      "rank": 412,
       "config_name": "scalability_2q",
       "num_qubits": 2,
       "time_per_step_ms": 0.0833749771118164,
@@ -518,7 +518,7 @@
       "success": true
     },
     {
-      "rank": 387,
+      "rank": 388,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.0814199447631836,
@@ -617,7 +617,7 @@
       "success": true
     },
     {
-      "rank": 368,
+      "rank": 369,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08018016815185547,
@@ -650,7 +650,7 @@
       "success": true
     },
     {
-      "rank": 376,
+      "rank": 377,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08068084716796875,
@@ -815,7 +815,7 @@
       "success": true
     },
     {
-      "rank": 362,
+      "rank": 363,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.0799417495727539,
@@ -881,7 +881,7 @@
       "success": true
     },
     {
-      "rank": 415,
+      "rank": 417,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.0840902328491211,
@@ -892,7 +892,7 @@
       "success": true
     },
     {
-      "rank": 435,
+      "rank": 438,
       "config_name": "scalability_2q",
       "num_qubits": 2,
       "time_per_step_ms": 0.12474060058593751,
@@ -903,7 +903,7 @@
       "success": true
     },
     {
-      "rank": 430,
+      "rank": 432,
       "config_name": "scalability_3q",
       "num_qubits": 3,
       "time_per_step_ms": 0.11148452758789062,
@@ -914,7 +914,7 @@
       "success": true
     },
     {
-      "rank": 437,
+      "rank": 440,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.13153553009033203,
@@ -925,7 +925,7 @@
       "success": true
     },
     {
-      "rank": 417,
+      "rank": 419,
       "config_name": "scalability_2q",
       "num_qubits": 2,
       "time_per_step_ms": 0.08499622344970703,
@@ -936,7 +936,7 @@
       "success": true
     },
     {
-      "rank": 363,
+      "rank": 364,
       "config_name": "scalability_3q",
       "num_qubits": 3,
       "time_per_step_ms": 0.0799417495727539,
@@ -1013,7 +1013,7 @@
       "success": true
     },
     {
-      "rank": 386,
+      "rank": 387,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08137226104736328,
@@ -1046,7 +1046,7 @@
       "success": true
     },
     {
-      "rank": 383,
+      "rank": 384,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08122920989990234,
@@ -1079,7 +1079,7 @@
       "success": true
     },
     {
-      "rank": 373,
+      "rank": 374,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08056163787841797,
@@ -1222,7 +1222,7 @@
       "success": true
     },
     {
-      "rank": 377,
+      "rank": 378,
       "config_name": "scalability_2q",
       "num_qubits": 2,
       "time_per_step_ms": 0.08072853088378906,
@@ -1343,7 +1343,7 @@
       "success": true
     },
     {
-      "rank": 365,
+      "rank": 366,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08001327514648438,
@@ -1541,7 +1541,7 @@
       "success": true
     },
     {
-      "rank": 374,
+      "rank": 375,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08063316345214844,
@@ -1607,7 +1607,7 @@
       "success": true
     },
     {
-      "rank": 416,
+      "rank": 418,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08494853973388672,
@@ -1640,7 +1640,7 @@
       "success": true
     },
     {
-      "rank": 409,
+      "rank": 411,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08330345153808594,
@@ -1871,7 +1871,7 @@
       "success": true
     },
     {
-      "rank": 378,
+      "rank": 379,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08084774017333984,
@@ -1904,7 +1904,7 @@
       "success": true
     },
     {
-      "rank": 381,
+      "rank": 382,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08111000061035156,
@@ -2036,7 +2036,7 @@
       "success": true
     },
     {
-      "rank": 404,
+      "rank": 406,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08282661437988281,
@@ -2069,7 +2069,7 @@
       "success": true
     },
     {
-      "rank": 395,
+      "rank": 396,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08196830749511719,
@@ -2113,7 +2113,7 @@
       "success": true
     },
     {
-      "rank": 369,
+      "rank": 370,
       "config_name": "scalability_2q",
       "num_qubits": 2,
       "time_per_step_ms": 0.08018016815185547,
@@ -2146,7 +2146,7 @@
       "success": true
     },
     {
-      "rank": 429,
+      "rank": 431,
       "config_name": "scalability_2q",
       "num_qubits": 2,
       "time_per_step_ms": 0.10721683502197266,
@@ -2157,7 +2157,7 @@
       "success": true
     },
     {
-      "rank": 425,
+      "rank": 427,
       "config_name": "scalability_3q",
       "num_qubits": 3,
       "time_per_step_ms": 0.09946823120117188,
@@ -2168,7 +2168,7 @@
       "success": true
     },
     {
-      "rank": 431,
+      "rank": 434,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.115966796875,
@@ -2399,7 +2399,7 @@
       "success": true
     },
     {
-      "rank": 380,
+      "rank": 381,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08094310760498047,
@@ -2432,7 +2432,7 @@
       "success": true
     },
     {
-      "rank": 396,
+      "rank": 397,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08199214935302734,
@@ -2476,7 +2476,7 @@
       "success": true
     },
     {
-      "rank": 397,
+      "rank": 398,
       "config_name": "scalability_2q",
       "num_qubits": 2,
       "time_per_step_ms": 0.08199214935302734,
@@ -2509,7 +2509,7 @@
       "success": true
     },
     {
-      "rank": 389,
+      "rank": 390,
       "config_name": "scalability_2q",
       "num_qubits": 2,
       "time_per_step_ms": 0.0814676284790039,
@@ -2531,7 +2531,7 @@
       "success": true
     },
     {
-      "rank": 392,
+      "rank": 393,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08172988891601562,
@@ -2553,7 +2553,7 @@
       "success": true
     },
     {
-      "rank": 394,
+      "rank": 395,
       "config_name": "scalability_3q",
       "num_qubits": 3,
       "time_per_step_ms": 0.0818490982055664,
@@ -2564,7 +2564,7 @@
       "success": true
     },
     {
-      "rank": 390,
+      "rank": 391,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08153915405273438,
@@ -2608,7 +2608,7 @@
       "success": true
     },
     {
-      "rank": 442,
+      "rank": 445,
       "config_name": "scalability_2q",
       "num_qubits": 2,
       "time_per_step_ms": 0.14433860778808594,
@@ -2619,7 +2619,7 @@
       "success": true
     },
     {
-      "rank": 433,
+      "rank": 436,
       "config_name": "scalability_3q",
       "num_qubits": 3,
       "time_per_step_ms": 0.12097358703613281,
@@ -2630,7 +2630,7 @@
       "success": true
     },
     {
-      "rank": 444,
+      "rank": 447,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.1531839370727539,
@@ -2718,7 +2718,7 @@
       "success": true
     },
     {
-      "rank": 406,
+      "rank": 408,
       "config_name": "scalability_3q",
       "num_qubits": 3,
       "time_per_step_ms": 0.08292198181152344,
@@ -2729,7 +2729,7 @@
       "success": true
     },
     {
-      "rank": 384,
+      "rank": 385,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08127689361572266,
@@ -2762,7 +2762,7 @@
       "success": true
     },
     {
-      "rank": 418,
+      "rank": 420,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08504390716552734,
@@ -2784,7 +2784,7 @@
       "success": true
     },
     {
-      "rank": 408,
+      "rank": 410,
       "config_name": "scalability_3q",
       "num_qubits": 3,
       "time_per_step_ms": 0.08306503295898438,
@@ -2795,7 +2795,7 @@
       "success": true
     },
     {
-      "rank": 422,
+      "rank": 424,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08852481842041016,
@@ -2894,7 +2894,7 @@
       "success": true
     },
     {
-      "rank": 398,
+      "rank": 399,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08199214935302734,
@@ -2982,7 +2982,7 @@
       "success": true
     },
     {
-      "rank": 372,
+      "rank": 373,
       "config_name": "scalability_3q",
       "num_qubits": 3,
       "time_per_step_ms": 0.08044242858886719,
@@ -3004,7 +3004,7 @@
       "success": true
     },
     {
-      "rank": 367,
+      "rank": 368,
       "config_name": "scalability_2q",
       "num_qubits": 2,
       "time_per_step_ms": 0.08015632629394531,
@@ -3026,7 +3026,7 @@
       "success": true
     },
     {
-      "rank": 388,
+      "rank": 389,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08144378662109375,
@@ -3059,7 +3059,7 @@
       "success": true
     },
     {
-      "rank": 371,
+      "rank": 372,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08022785186767578,
@@ -3070,7 +3070,7 @@
       "success": true
     },
     {
-      "rank": 427,
+      "rank": 429,
       "config_name": "scalability_2q",
       "num_qubits": 2,
       "time_per_step_ms": 0.10411739349365234,
@@ -3103,7 +3103,7 @@
       "success": true
     },
     {
-      "rank": 439,
+      "rank": 442,
       "config_name": "scalability_2q",
       "num_qubits": 2,
       "time_per_step_ms": 0.13327598571777344,
@@ -3114,7 +3114,7 @@
       "success": true
     },
     {
-      "rank": 434,
+      "rank": 437,
       "config_name": "scalability_3q",
       "num_qubits": 3,
       "time_per_step_ms": 0.12230873107910156,
@@ -3125,7 +3125,7 @@
       "success": true
     },
     {
-      "rank": 443,
+      "rank": 446,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.1508951187133789,
@@ -3191,7 +3191,7 @@
       "success": true
     },
     {
-      "rank": 421,
+      "rank": 423,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08635520935058594,
@@ -3257,7 +3257,7 @@
       "success": true
     },
     {
-      "rank": 403,
+      "rank": 404,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08246898651123047,
@@ -3312,7 +3312,7 @@
       "success": true
     },
     {
-      "rank": 401,
+      "rank": 402,
       "config_name": "scalability_3q",
       "num_qubits": 3,
       "time_per_step_ms": 0.08227825164794922,
@@ -3367,7 +3367,7 @@
       "success": true
     },
     {
-      "rank": 399,
+      "rank": 400,
       "config_name": "scalability_2q",
       "num_qubits": 2,
       "time_per_step_ms": 0.0820159912109375,
@@ -3389,7 +3389,7 @@
       "success": true
     },
     {
-      "rank": 423,
+      "rank": 425,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.09059906005859375,
@@ -3422,7 +3422,7 @@
       "success": true
     },
     {
-      "rank": 414,
+      "rank": 416,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08399486541748047,
@@ -3477,7 +3477,7 @@
       "success": true
     },
     {
-      "rank": 393,
+      "rank": 394,
       "config_name": "scalability_3q",
       "num_qubits": 3,
       "time_per_step_ms": 0.08182525634765625,
@@ -3488,7 +3488,7 @@
       "success": true
     },
     {
-      "rank": 375,
+      "rank": 376,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08063316345214844,
@@ -3587,7 +3587,7 @@
       "success": true
     },
     {
-      "rank": 411,
+      "rank": 413,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08342266082763672,
@@ -3620,7 +3620,7 @@
       "success": true
     },
     {
-      "rank": 379,
+      "rank": 380,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08091926574707031,
@@ -3653,7 +3653,7 @@
       "success": true
     },
     {
-      "rank": 366,
+      "rank": 367,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08006095886230469,
@@ -3686,7 +3686,7 @@
       "success": true
     },
     {
-      "rank": 370,
+      "rank": 371,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08020401000976562,
@@ -3785,7 +3785,7 @@
       "success": true
     },
     {
-      "rank": 364,
+      "rank": 365,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.0799417495727539,
@@ -3818,7 +3818,7 @@
       "success": true
     },
     {
-      "rank": 382,
+      "rank": 383,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08113384246826172,
@@ -3851,7 +3851,7 @@
       "success": true
     },
     {
-      "rank": 407,
+      "rank": 409,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08301734924316406,
@@ -3917,7 +3917,7 @@
       "success": true
     },
     {
-      "rank": 419,
+      "rank": 421,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.0856637954711914,
@@ -4214,7 +4214,7 @@
       "success": true
     },
     {
-      "rank": 402,
+      "rank": 403,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.08232593536376953,
@@ -4225,7 +4225,7 @@
       "success": true
     },
     {
-      "rank": 400,
+      "rank": 401,
       "config_name": "scalability_2q",
       "num_qubits": 2,
       "time_per_step_ms": 0.0820159912109375,
@@ -4456,7 +4456,7 @@
       "success": true
     },
     {
-      "rank": 438,
+      "rank": 441,
       "config_name": "scalability_2q",
       "num_qubits": 2,
       "time_per_step_ms": 0.1331806182861328,
@@ -4467,7 +4467,7 @@
       "success": true
     },
     {
-      "rank": 428,
+      "rank": 430,
       "config_name": "scalability_3q",
       "num_qubits": 3,
       "time_per_step_ms": 0.10695457458496094,
@@ -4478,7 +4478,7 @@
       "success": true
     },
     {
-      "rank": 436,
+      "rank": 439,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.12903213500976562,
@@ -4720,7 +4720,7 @@
       "success": true
     },
     {
-      "rank": 432,
+      "rank": 435,
       "config_name": "scalability_2q",
       "num_qubits": 2,
       "time_per_step_ms": 0.11861324310302734,
@@ -4731,7 +4731,7 @@
       "success": true
     },
     {
-      "rank": 440,
+      "rank": 443,
       "config_name": "scalability_3q",
       "num_qubits": 3,
       "time_per_step_ms": 0.1390218734741211,
@@ -4742,7 +4742,7 @@
       "success": true
     },
     {
-      "rank": 441,
+      "rank": 444,
       "config_name": "scalability_4q",
       "num_qubits": 4,
       "time_per_step_ms": 0.14009475708007812,
@@ -4863,7 +4863,7 @@
       "success": true
     },
     {
-      "rank": 420,
+      "rank": 422,
       "config_name": "scalability_3q",
       "num_qubits": 3,
       "time_per_step_ms": 0.08568763732910156,
@@ -4883,7 +4883,40 @@
       "backend": "dense",
       "timestamp": "2026-05-09 00:32:13 UTC",
       "success": true
+    },
+    {
+      "rank": 362,
+      "config_name": "scalability_2q",
+      "num_qubits": 2,
+      "time_per_step_ms": 0.07967948913574219,
+      "final_entropy": 0.0,
+      "final_sparsity": 0.25,
+      "backend": "dense",
+      "timestamp": "2026-05-10 00:31:57 UTC",
+      "success": true
+    },
+    {
+      "rank": 405,
+      "config_name": "scalability_3q",
+      "num_qubits": 3,
+      "time_per_step_ms": 0.08263587951660156,
+      "final_entropy": 0.0,
+      "final_sparsity": 0.125,
+      "backend": "dense",
+      "timestamp": "2026-05-10 00:31:57 UTC",
+      "success": true
+    },
+    {
+      "rank": 433,
+      "config_name": "scalability_4q",
+      "num_qubits": 4,
+      "time_per_step_ms": 0.11396408081054688,
+      "final_entropy": 0.0,
+      "final_sparsity": 0.0625,
+      "backend": "dense",
+      "timestamp": "2026-05-10 00:31:57 UTC",
+      "success": true
     }
   ],
-  "last_updated": "2026-05-09 00:32:13 UTC"
+  "last_updated": "2026-05-10 00:31:57 UTC"
 }
